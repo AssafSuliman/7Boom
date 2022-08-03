@@ -1,8 +1,11 @@
 class Player {
-  constructor(name){
+  constructor(name, id){
     this.name = name
+    this.id = id
   }
-  sayName () {
-    console.log(this.name)
+  sayName (number) {
+    console.log(number ,this.name)
   }
 }
+
+export default Player

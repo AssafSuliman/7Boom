@@ -5,3 +5,5 @@ class Boom {
     }
   }
 }
+
+export default Boom
