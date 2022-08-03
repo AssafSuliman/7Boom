@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/AssafSuliman/7Boom/issues"
   },
-  "homepage": "https://github.com/AssafSuliman/7Boom#readme"
+  "homepage": "https://github.com/AssafSuliman/7Boom#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
