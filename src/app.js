@@ -4,6 +4,9 @@ import Player from './clients/player.js'
 import Boom from './clients/7boom.js'
 import fs from 'fs'
 
+
+const app = () => {
+
 const game = new Game()
 const boom = new Boom()
 
@@ -13,6 +16,7 @@ const getUsers = () => {
       numberOfPlayers = readlineSync.question('there should be atleast 2 players playing: ')
   }
   fs.writeFileSync(`C:/Users/asafa/Desktop/Experis/FullStack/BackEnd/7Boom/src/common/lastgame.txt`, numberOfPlayers)
+  
   for(let i = 1; i <= numberOfPlayers; i++){
       const playerName = readlineSync.question('please add a player name: ')
       const player = new Player(playerName, i)
@@ -24,4 +28,9 @@ const getUsers = () => {
 
 getUsers()
 game.on('start', boom.printBoom)
-game.start(20)
+
+game.start(20) 
+
+}
+
+export default app
