@@ -18,7 +18,7 @@ class Game extends EventEmitter{
     }
     countNumbers(maxNumber = 100){
         for(let number = 0; number <= maxNumber; number++){
-            console.log(number, this.emit('start', arg))
+            console.log(number, this.emit('start', number))
         }
     }
 }
